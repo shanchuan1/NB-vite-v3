@@ -43,9 +43,9 @@ import { getLocal } from '@/request/api'
 
 import { reactive, onMounted, toRefs, nextTick } from 'vue'
 import { useRouter } from 'vue-router'
-import swiper from '@/components/Swiper'
-import navBar from '@/components/NavBar'
-import GoodList from '@/components/GoodList'
+import swiper from '@/components/Swiper.vue'
+import navBar from '@/components/NavBar.vue'
+import GoodList from '@/components/GoodList.vue'
 import { Toast } from 'vant'
 import { useStore } from 'vuex'
 export default {

@@ -50,8 +50,8 @@ import { reactive, onMounted, computed, toRefs } from 'vue'
 import { useRouter } from 'vue-router'
 import { useStore } from 'vuex'
 import { Toast } from 'vant'
-import navBar from '@/components/NavBar'
-import sHeader from '@/components/SimpleHeader'
+import navBar from '@/components/NavBar.vue'
+import sHeader from '@/components/SimpleHeader.vue'
 
 export default {
   components: {

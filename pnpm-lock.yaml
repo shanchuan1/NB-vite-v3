@@ -7,9 +7,10 @@ specifiers:
   less: ^4.1.3
   less-loader: ^11.1.3
   typescript: ^5.0.2
-  vant: ^4.6.3
+  vant: ^3.5.1
   vite: ^4.4.5
   vue: ^3.3.4
+  vue-app-verify: ^1.0.7
   vue-router: ^4.2.4
   vue-tsc: ^1.8.5
   vuex: ^4.1.0
@@ -19,8 +20,9 @@ dependencies:
   js-md5: registry.npmjs.org/js-md5/0.7.3
   less: registry.npmjs.org/less/4.1.3
   less-loader: registry.npmjs.org/less-loader/11.1.3_less@4.1.3
-  vant: registry.npmjs.org/vant/4.6.3_vue@3.3.4
+  vant: registry.npmjs.org/vant/3.5.1_vue@3.3.4
   vue: registry.npmjs.org/vue/3.3.4
+  vue-app-verify: registry.npmjs.org/vue-app-verify/1.0.7
   vue-router: registry.npmjs.org/vue-router/4.2.4_vue@3.3.4
   vuex: registry.npmjs.org/vuex/4.1.0_vue@3.3.4
 
@@ -309,6 +311,12 @@ packages:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.15.tgz}
     name: '@jridgewell/sourcemap-codec'
     version: 1.4.15
+
+  registry.npmjs.org/@vant/icons/1.8.0:
+    resolution: {integrity: sha512-sKfEUo2/CkQFuERxvkuF6mGQZDKu3IQdj5rV9Fm0weJXtchDSSQ+zt8qPCNUEhh9Y8shy5PzxbvAfOOkCwlCXg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@vant/icons/-/icons-1.8.0.tgz}
+    name: '@vant/icons'
+    version: 1.8.0
+    dev: false
 
   registry.npmjs.org/@vant/popperjs/1.3.0:
     resolution: {integrity: sha512-hB+czUG+aHtjhaEmCJDuXOep0YTZjdlRR+4MSmIFnkCQIxJaXLQdSsR90XWvAI2yvKUI7TCGqR8pQg2RtvkMHw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@vant/popperjs/-/popperjs-1.3.0.tgz}
@@ -943,17 +951,17 @@ packages:
     hasBin: true
     dev: true
 
-  registry.npmjs.org/vant/4.6.3_vue@3.3.4:
-    resolution: {integrity: sha512-hkiBzM1dhEj9EWSjRnyB7gd6SiVa3/+qthNZtlJdj42C+pXIN+oq0UhKz5PRHWi8fHyPfycnqRzyvEJxouT+zw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/vant/-/vant-4.6.3.tgz}
-    id: registry.npmjs.org/vant/4.6.3
+  registry.npmjs.org/vant/3.5.1_vue@3.3.4:
+    resolution: {integrity: sha512-SoTrAnesooXnAAR9IDn/zfna24tgShkC8/lAJJQsOa0ynmR61AnV1wOwCsUNf2Q1CobQIGi3AHTUan7cPzupEA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/vant/-/vant-3.5.1.tgz}
+    id: registry.npmjs.org/vant/3.5.1
     name: vant
-    version: 4.6.3
+    version: 3.5.1
     peerDependencies:
       vue: ^3.0.0
     dependencies:
+      '@vant/icons': registry.npmjs.org/@vant/icons/1.8.0
       '@vant/popperjs': registry.npmjs.org/@vant/popperjs/1.3.0
       '@vant/use': registry.npmjs.org/@vant/use/1.5.2_vue@3.3.4
-      '@vue/shared': registry.npmjs.org/@vue/shared/3.3.4
       vue: registry.npmjs.org/vue/3.3.4
     dev: false
 
@@ -995,6 +1003,12 @@ packages:
     optionalDependencies:
       fsevents: registry.npmjs.org/fsevents/2.3.2
     dev: true
+
+  registry.npmjs.org/vue-app-verify/1.0.7:
+    resolution: {integrity: sha512-x1iRcxpXClcpL49+9uPZLIX+Mwim9acDndEfOd0fzEzp9ajVYcP9ZQ7PI9bLca8aeUKwGEDMEy8g0o4NUP9g/Q==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/vue-app-verify/-/vue-app-verify-1.0.7.tgz}
+    name: vue-app-verify
+    version: 1.0.7
+    dev: false
 
   registry.npmjs.org/vue-router/4.2.4_vue@3.3.4:
     resolution: {integrity: sha512-9PISkmaCO02OzPVOMq2w82ilty6+xJmQrarYZDkjZBfl4RvYAlt4PKnEX21oW4KTtWfa9OuO/b3qk1Od3AEdCQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/vue-router/-/vue-router-4.2.4.tgz}

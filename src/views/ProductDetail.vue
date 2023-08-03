@@ -46,7 +46,7 @@ import { addCart } from '@/request/api'
 import { reactive, onMounted, computed, toRefs, nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useStore } from 'vuex'
-import sHeader from '@/components/SimpleHeader'
+import sHeader from '@/components/SimpleHeader.vue'
 import { Toast } from 'vant'
 export default {
   setup() {

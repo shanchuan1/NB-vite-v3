@@ -41,8 +41,8 @@
 import { getUserInfo } from '@/request/api'
 
 import { reactive, onMounted, toRefs } from 'vue'
-import navBar from '@/components/NavBar'
-import sHeader from '@/components/SimpleHeader'
+import navBar from '@/components/NavBar.vue'
+import sHeader from '@/components/SimpleHeader.vue'
 import { useRouter } from 'vue-router'
 export default {
   components: {

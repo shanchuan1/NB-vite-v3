@@ -84,8 +84,8 @@ import { login, register } from '@/request/api'
 import { setLocal } from '@/request/api'
 
 
-import sHeader from '@/components/SimpleHeader'
-import VueImageVerify from '@/components/VueImageVerify'
+import sHeader from '@/components/SimpleHeader.vue'
+import VueImageVerify from '@/components/VueImageVerify.vue'
 import { reactive, ref, toRefs } from 'vue'
 import { Toast } from 'vant';
 import md5 from 'js-md5'

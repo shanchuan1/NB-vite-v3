@@ -56,8 +56,8 @@ import { getCategory } from "@/request/api";
 
 import { reactive, onMounted, ref, toRefs } from 'vue'
 import { useRouter } from 'vue-router'
-import navBar from '@/components/NavBar'
-import listScroll from '@/components/ListScroll'
+import navBar from '@/components/NavBar.vue'
+import listScroll from '@/components/ListScroll.vue'
 import { Toast } from 'vant'
 
 export default {
