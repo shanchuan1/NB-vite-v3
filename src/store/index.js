@@ -1,6 +1,7 @@
 import { createStore } from 'vuex'
 import { getLocal } from '@/request/api';
-import { getCart } from '../request/api';  
+// import { getCart } from '../request/api';  
+import { getCart } from '@/request/api';  
 
 
 
