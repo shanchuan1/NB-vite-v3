@@ -42,7 +42,7 @@ import { getAddressDetail, getDefaultAddress } from '../request/api'
 
 
 import sHeader from '@/components/SimpleHeader.vue'
-import { computed, onMounted, reactive, toRefs } from '@vue/runtime-core'
+import { computed, onMounted, reactive, toRefs } from 'vue'
 import { Toast } from 'vant'
 import { useRoute, useRouter } from 'vue-router'
 

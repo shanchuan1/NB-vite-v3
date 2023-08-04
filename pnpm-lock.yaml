@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@vant/area-data': ^1.5.0
   '@vitejs/plugin-vue': ^4.2.3
   axios: ^1.4.0
   better-scroll: ^2.5.1
@@ -17,6 +18,7 @@ specifiers:
   vuex: ^4.1.0
 
 dependencies:
+  '@vant/area-data': registry.npmjs.org/@vant/area-data/1.5.0
   axios: registry.npmjs.org/axios/1.4.0
   better-scroll: registry.npmjs.org/better-scroll/2.5.1
   js-md5: registry.npmjs.org/js-md5/0.7.3
@@ -431,6 +433,12 @@ packages:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.15.tgz}
     name: '@jridgewell/sourcemap-codec'
     version: 1.4.15
+
+  registry.npmjs.org/@vant/area-data/1.5.0:
+    resolution: {integrity: sha512-SWmDhYmWiOgtAgtJqcW7N4XyGgrg/7l6t1+XSgt8BkPp2oOKO1ZUn8+46brLpT/gzRe/v8BtyTLmdBwMamrmQw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@vant/area-data/-/area-data-1.5.0.tgz}
+    name: '@vant/area-data'
+    version: 1.5.0
+    dev: false
 
   registry.npmjs.org/@vant/icons/1.8.0:
     resolution: {integrity: sha512-sKfEUo2/CkQFuERxvkuF6mGQZDKu3IQdj5rV9Fm0weJXtchDSSQ+zt8qPCNUEhh9Y8shy5PzxbvAfOOkCwlCXg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@vant/icons/-/icons-1.8.0.tgz}

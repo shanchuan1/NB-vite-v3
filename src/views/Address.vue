@@ -19,9 +19,8 @@
 <script>
 import { getAddressList } from '../request/api'
 
-import { reactive, toRefs } from '@vue/reactivity';
-import sHeader from '../components/SimpleHeader.vue'
-import { onMounted } from '@vue/runtime-core';
+import { reactive, toRefs , onMounted} from 'vue';
+import sHeader from '@/components/SimpleHeader.vue'
 import { useRoute, useRouter } from 'vue-router';
 
 export default {
