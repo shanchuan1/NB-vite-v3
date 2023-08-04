@@ -7,11 +7,11 @@ export default defineConfig({
   base:'./',// 将根路径换成相对路径
   plugins: [vue()],
   server: {
-    port: 8081,
+    port: 8080,
     https: false,
     proxy: {
       '/api': {
-        target: 'http://172.17.28.177',
+        target: 'http://127.0.0.1',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       }
