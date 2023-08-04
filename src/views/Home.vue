@@ -56,6 +56,7 @@ export default {
         GoodList
     },
     setup() {
+        console.log('success-------')
         const store = useStore()
         const router = useRouter()
         const state = reactive({
