@@ -7,7 +7,7 @@ export default defineConfig({
   base:'./',// 将根路径换成相对路径
   plugins: [vue()],
   server: {
-    // port: 8080,
+    port: 8080,
     https: false,
     proxy: {
       '/api': {
