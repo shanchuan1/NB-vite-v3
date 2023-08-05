@@ -4,8 +4,8 @@ import router from '../router'
 import { setLocal } from "@/request/api";
 
 
-axios.defaults.baseURL = 'http://backend-api-01.newbee.ltd/api/v1'    //如baseurl出错这里请求是本地的http://localhost:8081
-// axios.defaults.baseURL = '/api'  
+// axios.defaults.baseURL = 'http://backend-api-01.newbee.ltd/api/v1'    //如baseurl出错这里请求是本地的http://localhost:8081
+axios.defaults.baseURL = '/api'  
   
 //只要用axios进行接口请求的，都可以在请求头里面携带cookie或者authorization headers
 axios.defaults.withCredentials = true 
