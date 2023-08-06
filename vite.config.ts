@@ -1,7 +1,7 @@
 import path from "path";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-// import { visualizer } from "rollup-plugin-visualizer";
+import { visualizer } from "rollup-plugin-visualizer";
 // import viteCompression from "vite-plugin-compression";
 // import importToCDN from "vite-plugin-cdn-import";
 // import viteImagemin from "vite-plugin-imagemin"; //图片压缩
@@ -104,6 +104,19 @@ export default defineConfig({
     //     assetFileNames: 'static/[ext]/[name]-[hash].[ext]'
     //   },
     // }
+    /* 如果不同模块使用的插件基本相同那就尽可能打包在同一个文件中，减少http请求，
+    如果不同模块使用不同插件明显，那就分成不同模块打包。这是一个矛盾体 */
+    // rollupOptions: {
+    //   output: {
+    //     manualChunks(id) {
+    //       if (id.includes("node_modules")) {
+    //         // 让每个插件都打包成独立的文件
+    //         return id .toString() .split("node_modules/")[1] .split("/")[0] .toString(); 
+    //       }
+    //     }
+    //   }
+    // }
+    
   },
   //移除生产环境log
   esbuild: {
