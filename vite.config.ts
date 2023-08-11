@@ -18,6 +18,13 @@ export default defineConfig({
     //   open: true,
     // }),
     //开启gzip
+    /* 
+    对于gzip代码压缩，有的人说我服务器端压缩了，为啥还要用vite进行gzip打包压缩，这里就涉及到一个知识点，动态压缩和静态压缩，
+    服务器是动态压缩，占用cpu性能，vite等打包好gzip部署后走的静态压缩，服务器压力小，
+    当请求静态资源时，服务端发现请求资源为gzip的格式时，应该设置响应头 content-encoding: gzip 。
+    因为浏览器解压也需要时间，所以代码体积不是很大的话不建议使用 gzip 压缩
+    注： 图片文件不建议用gzip压缩
+    */
     // viteCompression({
     //   //生成压缩包gz
     //   verbose: true,
@@ -26,6 +33,9 @@ export default defineConfig({
     //   algorithm: "gzip",
     //   ext: ".gz",
     // }),
+    /* 内容分发网络（Content Delivery Network，简称 CDN）就是让用户从最近的服务器请求资源，提升网络请求的响应速度。
+    同时减少应用打包出来的包体积，利用浏览器缓存，不会变动的文件长期缓存。 */
+    // 注意：使用 CDN 未必会加快速度，只能减小打包体积，因为对应 js 和 css 需要从远程地址读取
     // importToCDN({
     //   modules: [
     //     {
